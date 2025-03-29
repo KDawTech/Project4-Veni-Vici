@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Web Development Project 4 - Veni Vici
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Submitted by: **Kevon Dawkins**
 
-## Available Scripts
+This web app: Allows users to discover random cats with breed info using The Cat API, and lets users ban unwanted attributes from future discoveries. The app also keeps track of previously seen cats.
 
-In the project directory, you can run:
+Time spent: **13** hours spent in total
 
-### `npm start`
+## Required Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The following **required** functionality is completed:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [x] **Application features a button that creates a new API fetch request on click and displays at least three attributes and an image obtained from the returned JSON data**
+  - The type of attribute displayed for each image is consistent across API calls (origin, weight, and lifespan)
+- [x] **Only one item/data from API call response is viewable at a time and at least one image is displayed per API call**
+  - A single result of an API call is displayed at a time
+  - Displayed attributes match the displayed image
+  - There is at least one image per API call
+- [x] **API call response results appear random to the user**
+  - Clicking on the API call button generates a seemingly random new result each time
+  - Repeat results are possible but not frequent
+- [x] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+  - Clicking on a clickable attribute not on the ban list immediately adds it to the ban list
+  - Clicking on an attribute in the ban list immediately removes it from the ban list
+- [x] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+  - Clicking the Discover button will never show results containing banned attributes
+  - _Recording will demonstrate adding/removing attributes correctly_
 
-### `npm test`
+## Optional Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following **optional** features are implemented:
 
-### `npm run build`
+- [x] Multiple types of attributes are clickable and can be added to the ban list
+- [x] Users can see a stored history of their previously displayed results from this session
+  - A dedicated section of the application displays all previous images/attributes seen before
+  - Each time the API call button is clicked, the history updates with the newest API result
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Additional Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] Custom minimalist UI design (teal + soft gray theme)
+- [x] Responsive image sizes to avoid oversized images
+- [x] Smooth button hover effects
+- [x] Rounded corners for all cards and buttons
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Video Walkthrough
 
-### `npm run eject`
+Here's a walkthrough of implemented user stories:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src='https://github.com/KDawTech/Project4-Veni-Vici/blob/main/Veni%20Vici.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Notes
 
-## Learn More
+Challenges:
+- Avoiding repeated API results when too many ban list items are added
+- Making sure the image sizes stay clean and responsive
+- Styling the history to fit under the main card in a vertical layout
+- didn't get to do the stretch challenge as I have trouble implementing the history design and production
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Copyright 2025 Kevon Dawkins
 
-### Code Splitting
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+        http://www.apache.org/licenses/LICENSE-2.0
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
