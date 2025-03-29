@@ -1,38 +1,101 @@
+body {
+  background: #f5f9fa;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  color: #008080;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin-bottom: 1rem;
+  color: #555;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.discover-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.attributes button {
+  background: #00bfa5;
   color: white;
+  border: none;
+  margin: 4px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.attributes button:hover {
+  background: #00897b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.discover-btn {
+  background: #4caf50;
+  color: white;
+  padding: 8px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.discover-btn:hover {
+  background: #388e3c;
+}
+
+.ban-list {
+  margin-top: 20px;
+}
+
+.ban-list button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.history {
+  background: #fff;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.history-item {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #666;
 }
